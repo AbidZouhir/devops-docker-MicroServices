@@ -1,10 +1,8 @@
 package net.bank.accountservice.model;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
-@Getter @Setter @ToString
+@NoArgsConstructor @AllArgsConstructor @Getter @Setter @ToString @Builder
 public class Customer {
     private Long id;
     private String firstName;

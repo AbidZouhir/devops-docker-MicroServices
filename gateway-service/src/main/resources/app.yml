@@ -14,4 +14,3 @@ spring:
     name: gateway-service
 server:
   port: 8888
-
