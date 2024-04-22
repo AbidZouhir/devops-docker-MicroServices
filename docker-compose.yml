@@ -69,3 +69,10 @@ services:
     depends_on:
       zouhir-customer-service:
         condition: service_healthy
+  zouhir-angular-front-end:
+    build: ./angular-front-end
+    container_name: zouhir-angular-front-end
+    ports:
+      - '80:80'
+    expose:
+      - '80'

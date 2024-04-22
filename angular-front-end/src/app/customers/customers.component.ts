@@ -1,18 +1,18 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-customers',
   standalone: true,
   imports: [
-    NgForOf,HttpClientModule
+    NgForOf,HttpClientModule,NgIf
   ],
   templateUrl: './customers.component.html',
   styleUrl: './customers.component.css'
 })
 export class CustomersComponent implements OnInit{
-  customers : any
+  customers : any;
   constructor(private http : HttpClient) {
   }
   ngOnInit() {
